@@ -1,0 +1,83 @@
+/* Basic reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  /* Set the font family */
+  background-color: #f4f4f9;
+  /* Light gray background */
+  color: #333;
+  /* Dark gray text */
+  display: flex;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+/* Container for the job listings */
+.container {
+  background: white;
+  /* White background for the container */
+  width: 80%;
+  /* 80% of the screen width */
+  max-width: 1000px;
+  /* Max width of 1000px */
+  padding: 20px;
+  /* Padding around the container */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow effect */
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  /* Center the heading */
+  margin-bottom: 30px;
+  /* Space below the heading */
+}
+
+/* Filter section styling */
+.filters {
+  text-align: center;
+  /* Center the filter */
+  margin-bottom: 20px;
+  /* Space below the filter */
+}
+
+/* Style for the dropdown filter */
+.filters select {
+  padding: 10px;
+  border-radius: 5px;
+  /* Rounded corners */
+  border: 1px solid #ccc;
+  /* Light gray border */
+  font-size: 16px;
+  /* Font size */
+}
+
+/* Job listings container */
+#jobListings {
+  display: flex;
+  flex-direction: column;
+  /* Display jobs in a column */
+  gap: 20px;
+  /* Space between job listings */
+}
+
+/* Individual job styling */
+.job {
+  background: #fff;
+  /* White background */
+  padding: 15px;
+  /* Padding around the job listing */
+  border

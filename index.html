@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Listings</h1>
+    <!-- Filter Section -->
+    <div class="filters">
+      <select id="jobFilter" onchange="filterJobs()">
+        <!-- Dropdown to filter jobs -->
+        <option value="">Filter by job type</option>
+        <!-- Default option -->
+        <option value="Full-Time">Full-Time</option>
+        <!-- Option for Full-Time jobs -->
+        <option value="Part-Time">Part-Time</option>
+        <!-- Option for Part-Time jobs -->
+        <option value="Internship">Internship</option>
+        <!-- Option for Internship jobs -->
+      </select>
+    </div>
+    <!-- Job Listings Section -->
+    <div id="jobListings">
+      <!-- Individual Job Listing 1 -->
+      <div class="job">
+        <h2>Software Developer</h2>
+        <!-- Job title -->
+        <p>Company: TechCorp</p>
+        <!-- Job company -->
+        <p>Location: Remote</p>
+        <!-- Job location -->
+        <p>Type: Full-Time</p>
+        <!-- Job type -->
+        <button onclick="applyJob()">Apply</button>
+        <!-- Apply button -->
+      </div>
+      <!-- Individual Job Listing 2 -->
+      <div class="job">
+        <h2>Web Designer</h2>
+        <!-- Job title -->
+        <p>Company: WebWorks</p>
+        <!-- Job company -->
+        <p>Location: New York</p>
+        <!-- Job location -->
+        <p>Type: Part-Time</p>
+        <!-- Job type -->
+        <button onclick="applyJob()">Apply</button>
+        <!-- Apply button -->
+      </div>
+      <!-- Individual Job Listing 3 -->
+      <div class="job">
+        <h2>Marketing Intern</h2>
+        <!-- Job title -->
+        <p>Company: Marketify</p>
+        <!-- Job company -->
+        <p>Location: Los Angeles</p>
+        <!-- Job location -->
+        <p>Type: Internship</p>
+        <!-- Job type -->
+        <button onclick="applyJob()">Apply</button>
+        <!-- Apply button -->
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
